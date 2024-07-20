@@ -1,0 +1,3178 @@
+:root{
+    --main-color:  #f0771a;
+}
+body{
+ 
+ font-family: "Lato", sans-serif;
+ text-transform: capitalize;
+ background-color: #141215;
+ color: white;
+ 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* start header */
+header{
+    background-image: url(images/slider-1.webp);
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    position: relative;
+    animation: photo 5s alternate infinite;
+    animation-timing-function: step-end;
+}
+@keyframes photo{
+    50%{
+        background-image: url(images/slider-2.webp);
+    }
+}
+header nav{
+    /* transform: translate(-80px); */
+    z-index: 100000;
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    right: 100px;
+    padding: 45px 120px;
+}
+header nav .logo{
+    cursor: pointer;
+}
+header nav ul{
+    z-index: 100;
+    display: flex;
+    transform: translate(100px);
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+header nav ul li .fa-chevron-down{
+    font-size: 9px;
+    font-weight: 600;
+}
+
+header nav ul li{
+    padding: 0 13px;
+    list-style: none;    
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+ header nav ul li .Buy{
+    color: var(--main-color);
+    font-weight: normal;
+ }
+ header nav ul li .hell{
+    display: block;
+    transform: translate(-1px, 14px);
+ }
+ header nav ul li .spp{
+    background-color: var(--main-color);
+    width: max-content;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(50px, -30px);
+ }
+ header nav ul li .triangle{
+    width: 0px;
+    height: 0px;
+    border-bottom: 6px transparent solid;
+    border-left: 6px solid  var(--main-color);
+    border-top: 6px solid transparent;
+    rotate: 90deg;
+    transform: translate(-33px, -70px);
+ }
+ header nav ul li .spp .skin{
+    color: black;
+    padding: 1px 5px;
+    font-size: 11px;
+ }
+ header nav .iconsleft {
+    color: var(--main-color);
+    font-size: 30px;
+   transform: translate(150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 49px;
+    transition: 0.3s;
+ }
+
+ 
+header nav .iconsleft .bx-search:hover{
+    color: #fdfdfd;
+    cursor: pointer;
+    transition: 0.3s;
+}
+header nav .iconsleft .fa-user:hover{
+    color: #fdfdfd;
+    cursor: pointer;
+    transition: 0.3s;
+}
+header nav .iconsleft .fa-basket-shopping:hover{
+    color: #fdfdfdef;
+    cursor: pointer;
+    transition: 0.3s;
+}
+header nav ul li a.pag:hover{
+    color:#f0771a;
+    cursor: pointer;
+    transition: 0.1s;
+}
+header nav ul li a.pag:hover .fa-chevron-down{
+    display: none;
+}
+header nav ul li .fa-chevron-up{
+    font-size: 9px;
+    font-weight: 600;
+    transform: translate(45px,-11px);
+    display: none;
+    transition: 1s;
+}
+header nav ul li a.hom:hover{
+    transition: 0.1s;
+}
+header nav ul li .hom:hover .fa-chevron-down{
+display: none;
+}
+header nav ul li .hom:hover .fa-chevron-up{
+    display: block;
+}
+header nav ul li a.pag:hover .fa-chevron-up{
+    display: block;
+}
+header nav ul li .hell:hover .fa-chevron-down{
+    display: none;
+}
+header nav ul li .hell:hover .fa-chevron-up{
+    display: block;
+    transform: translate(78px, -10px);
+}
+ header nav ul li a.hell:hover{
+    color: #f0771a;
+    cursor: pointer;
+    transition: 0.1s;
+ }
+ header nav .a3{
+    border-radius: 50%;
+    padding: 0 4px;
+    transform: translate(-20px,10px);
+    color: black;
+
+    text-align: center;
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+ }
+
+ header  .slider_left{
+    background-color:#8e8d8d;
+    
+    padding: 18px 21px;
+    width: 10px;
+    top: 50%;
+    left: 50px;
+
+    border-radius: 50%;
+    transform: translate(20px,150px);
+    transition: 0.3s;
+ }
+ header .slider_left .fa-chevron-left{
+    color: white;
+ }
+ header .slider_left:hover{
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+header .slider_right{
+    top: 50%;
+    left: 50px;
+    transform: translate(1350px, 100px);
+    width: 10px;
+    background-color:#8e8d8d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 21px;
+    border-radius: 50%;
+    transition: 0.3s;
+    /* transform: translate(450px,200px); */
+ }
+ header .slider_right .fa-chevron-right{
+    color: #fdfdfd;
+ }
+ header .slider_right:hover{
+    background-color: #f0771a;
+    cursor: pointer;
+ }
+ header  .titlehead {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    transform: translate(-210px, -100px);
+    
+ }
+ header .titlehead h1{
+    
+    font-size: 80px;
+    font-weight: 900;
+    /* transform: translate(180px, -90px); */
+ }
+ header  .titlehead h2{
+    font-size: 38px;
+    font-weight: 900;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    /* transform: translate(120px, -120px); */
+ }
+ .titlehead button{
+    padding: 25px 50px;
+    background-color: #141215;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.3s;
+    /* transform: translate(250px, -120px); */
+}
+.titlehead button:hover{
+    background-color: #fff;
+    color: #141215;
+}
+header nav ul li:nth-child(2){
+    position: relative;
+    
+}
+header nav ul li:nth-child(2):hover .dropdown-menu2{
+    display: flex;
+    
+}
+header nav ul li:nth-child(2) .dropdown-menu2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #141215;
+    gap: 8px;
+    font-size: 14px;
+    z-index: 500;
+
+    width: 300px;
+    padding: 20px 30px;
+    left: 0;
+    top: 30px;
+    display: none;
+
+
+}
+header nav ul li:nth-child(2) .dropdown-menu2 a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+header nav ul li:nth-child(2) .dropdown-menu2 a:hover{
+    transform: translate(10px);
+    color: #fff;
+    cursor: pointer;
+}
+nav ul li:nth-child(2) .dropdown-menu2 a.part-2{
+    justify-content: flex-start;
+    gap: 10px;
+}
+nav ul li:nth-child(2) .dropdown-menu2 a.part-2 i{
+    margin-left: -15px;
+    opacity: 0;
+}
+nav ul li:nth-child(2) .dropdown-menu2 a.part-2 i:hover{
+    margin-left: 2px;
+    opacity: 2;
+}
+header nav ul li:nth-child(1){
+    position: relative;
+}
+header nav ul li:nth-child(1):hover .dropdown-menu1{
+    display: flex;
+}
+header nav ul li:nth-child(1) .dropdown-menu1{
+    z-index: 200;
+    width: 600px;
+    height: 320px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 20px;
+    font-size: 14px;
+    background-color: #141215;
+    left: -20px;
+    top: 20px;
+    display: none;
+}
+header nav ul li .dropdown-menu1 div{
+    position: relative;
+}
+header nav ul li .dropdown-menu1 div .nnee{
+    background-color: var(--main-color);
+    transition: 0.3s;
+    color: #000000;
+    padding: 1px 4px;
+    border-radius: 5px;
+    transform: translate(100px, -18px);
+    position: absolute;
+}
+header nav ul li .dropdown-menu1 div .nne{
+    background-color: var(--main-color);
+    color: #000000;
+    padding: 1px 4px;
+    border-radius: 5px;
+    transform: translate(130px, -20px);
+    position: absolute;
+}
+header nav ul li .dropdown-menu1 div .nne p{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    align-items: center;
+    transform: translate(-2px);
+}
+header nav ul li .dropdown-menu1 div .nneee{
+    background-color: var(--main-color);
+    color: #000000;
+    padding: 1px 4px;
+    border-radius: 5px;
+    transform: translate(90px, -20px);
+    position: absolute;
+}
+header nav ul li .dropdown-menu1 div .nneee p{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    align-items: center;
+    transform: translate(-2px);
+}
+header nav ul li .dropdown-menu1 div .nnee p{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    align-items: center;
+    transform: translate(-2px);
+}
+header nav ul li:nth-child(1) .dropdown-menu1 i{
+    /* transform: translate(-240px); */
+    transform: translate(-350px);
+}
+header nav ul li:nth-child(1) .dropdown-menu1 a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+header nav ul li:nth-child(1) .dropdown-menu1 a:hover{
+    transform: translate(10px);
+    color: #fdfdfd;
+    cursor: pointer;
+}
+header nav ul li:nth-child(1):hover .dropdown-menu1p2{
+    display: flex;
+}
+header nav ul li:nth-child(1) .dropdown-menu1p2{
+    z-index: 500;
+    transform: translate(340px, 3px);
+    width: 150px;
+    height: 320px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 20px;
+    font-size: 14px;
+    background-color: #141215;
+    left: -20px;
+    display: none;
+}
+header nav ul li .dropdown-menu1p2 div{
+    position: relative;
+}
+header nav ul li .dropdown-menu1p2 div .com{
+    background-color: white;
+    transition: 0.3s;
+    color: #000000;
+    padding: 1px 4px;
+    border-radius: 5px;
+    transform: translate(90px, -18px);
+    position: absolute;
+}
+header nav ul li .dropdown-menu1p2 div .com p{
+    display: flex;
+    font-weight: 500;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    transform: translate(1px);
+}
+/* ________ */
+header nav ul li .dropdown-menu1p2 div .com2{
+    background-color: orange;
+    transition: 0.3s;
+    color: #000000;
+    padding: 1px 4px;
+    border-radius: 5px;
+    transform: translate(40px, -18px);
+    position: absolute;
+}
+header nav ul li .dropdown-menu1p2 div .com2 p{
+    display: flex;
+    font-weight: 500;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    transform: translate(1px);
+}
+/* ________ */
+header nav ul li .dropdown-menu1p2 div .com3{
+    background-color:var(--main-color);
+    transition: 0.3s;
+    color: #000000;
+    padding: 1px 4px;
+    border-radius: 5px;
+    transform: translate(60px, -18px);
+    position: absolute;
+}
+header nav ul li .dropdown-menu1p2 div .com3 p{
+    display: flex;
+    font-weight: 500;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    transform: translate(1px);
+}
+header nav ul li:nth-child(1) .dropdown-menu1p2 p{
+    transform: translate(-40px);
+}
+header nav ul li:nth-child(1) .dropdown-menu1p2 i{
+    transform: translate(540px);
+}
+header nav ul li:nth-child(1) .dropdown-menu1p2 a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+header nav ul li:nth-child(1) .dropdown-menu1p2 a:hover{
+    transform: translate(10px);
+    color: #fdfdfd;
+    cursor: pointer;
+}
+nav ul li:nth-child(1) .dropdown-menu1p2 .aaa{
+    transform: translate(100px);
+}
+.header nav ul li:nth-child(3){
+    position: relative;
+}
+header nav ul li:nth-child(3):hover .dropdown-menu3{
+    display: flex;
+}
+header nav ul li:nth-child(3) .dropdown-menu3{
+    z-index: 200;
+    width: 1450px;
+    height: 490px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 20px;
+    font-size: 14px;
+    background-color: #141215;
+    /* left: 150px; */
+    /* top: 20px; */
+    transform: translate(-800px);
+    display: none;
+    overflow: hidden;
+}
+header nav ul li .dropdown-menu3 .imgmen{
+    border-radius: 20px;
+    transform: translate(100px);
+    width: 300px;
+    overflow: hidden;
+}
+header nav ul li .dropdown-menu3 .menu3p1{
+    overflow: hidden;
+    width: 300px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .menu3p1:hover{
+    cursor: pointer;
+    overflow: hidden;
+    transform: scale(1.1);
+}
+header nav ul li .dropdown-menu3 .collections{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transform: translate(400px);
+    padding: 30px 5px;
+}
+header nav ul li .dropdown-menu3 .collections p{
+    font-weight:500;
+    font-size: 14px;
+}
+header nav ul li .dropdown-menu3 .collections .collh{
+    font-size: 20px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 600;
+    gap: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .collections .collh:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .collections .martins{
+    overflow: hidden;
+    /* background-color: white; */
+    width: 240px;
+    transform: translateY(50px);
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 10px 10px;
+    
+}
+header nav ul li .dropdown-menu3 .collections .martins:hover{
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .collections .martins i{
+    position: absolute;
+    font-size: 7px;
+    /* transform: translate(-40px); */
+    transform: translate(-20px, 6px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .collections .martins:hover i{
+    transform: translate(12px, 7px);
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .collections .martins p{
+    transition: 0.5s;
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .collections .martins:hover p{
+    transform: translate(20px);
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .collections .spring{
+    overflow: hidden;
+    /* background-color: white; */
+    width: 240px;
+    transform: translateY(50px);
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 10px 10px;
+    
+}
+header nav ul li .dropdown-menu3 .collections .spring:hover{
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .collections .spring i{
+    position: absolute;
+    font-size: 7px;
+    /* transform: translate(-40px); */
+    transform: translate(-20px, 6px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .collections .spring:hover i{
+    transform: translate(12px, 5px);
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .collections .spring p{
+    transition: 0.5s;
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .collections .spring:hover p{
+    transform: translate(20px);
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .collections .summ{
+    overflow: hidden;
+    /* background-color: white; */
+    width: 240px;
+    transform: translateY(50px);
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 10px 10px;
+    
+}
+header nav ul li .dropdown-menu3 .collections .summ:hover{
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .collections .summ i{
+    font-size: 7px;
+    position: absolute;
+    /* transform: translate(-90px, -10px); */
+    transform: translate(-20px, 6px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .collections .summ:hover i{
+    transform: translate(12px, 5px);
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .collections .summ p{
+    transition: 0.5s;
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .collections .summ:hover p{
+    transform: translate(20px);
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .collections .cru{
+    overflow: hidden;
+    /* background-color: white; */
+    width: 240px;
+    transform: translateY(50px);
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 10px 10px;
+    
+}
+header nav ul li .dropdown-menu3 .collections .cru:hover{
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .collections .cru i{
+    font-size: 7px;
+    position: absolute;
+    /* transform: translate(-90px, -10px); */
+    transform: translate(-20px, 6px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .collections .cru:hover i{
+    transform: translate(12px, 5px);
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .collections .cru p{
+    transition: 0.5s;
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .collections .cru:hover p{
+    transform: translate(20px);
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .collections .fall{
+    overflow: hidden;
+    /* background-color: white; */
+    width: 240px;
+    transform: translateY(50px);
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 4px 10px;
+    
+}
+header nav ul li .dropdown-menu3 .collections .fall:hover{
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .collections .fall i{
+    font-size: 7px;
+    position: absolute;
+    /* transform: translate(-90px, -10px); */
+    transform: translate(-20px, 6px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .collections .fall:hover i{
+    transform: translate(12px, 5px);
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .collections .fall p{
+/* transform: translate(-70px); */
+    transition: 0.5s;
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .collections .fall:hover p{
+    transform: translate(20px);
+    cursor: pointer;
+}
+
+
+
+header nav ul li .dropdown-menu3 .ready{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transform: translate(660px);
+    padding: 30px 5px;
+}
+header nav ul li .dropdown-menu3 .ready p{
+    font-size: 14px;
+    font-weight:normal ;
+}
+header nav ul li .dropdown-menu3 .ready .rea{
+    font-size: 20px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 600;
+    gap: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+header nav ul li .dropdown-menu3 .ready .rea:hover{
+    cursor: pointer;
+    color: var(--main-color);
+}
+header nav ul li .dropdown-menu3 .ready .jac{
+    
+    width: 250px;
+    padding: 8px 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+header nav ul li .dropdown-menu3 .ready .jac:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .ready .jac p{
+    transform: translate(-100px);
+    transition: 0.5s;
+}
+header nav ul li .dropdown-menu3 .ready .jac i{
+    
+    transform: translate(120px);
+    font-size: 15px;
+    position: absolute;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+header nav ul li .dropdown-menu3 .ready .jac:hover p{
+    transform: translate(-70px);
+}
+header nav ul li .dropdown-menu3 .ready .dress{
+
+    width: 250px;
+    padding: 8px 10px;
+    transform: translate(0px, 40px);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header nav ul li .dropdown-menu3 .ready .dress:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .ready .dress p{
+    transform: translate(-70px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .ready .dress i{
+    
+    transform: translate(-140px);
+    font-size: 7px;
+    position: absolute;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+header nav ul li .dropdown-menu3 .ready .dress:hover p{
+    transform: translate(-55px);
+}
+header nav ul li .dropdown-menu3 .ready .dress:hover i{
+    transform: translate(-120px);
+}
+
+header nav ul li .dropdown-menu3 .ready .dress .salee{
+    background-color: var(--main-color);
+    transition: 0.3s;
+    color: #000000;
+    width: 45px;
+    height: 20px;
+    border-radius: 5px;
+    transform: translate(-60px);
+    position: relative;
+}
+header nav ul li .dropdown-menu3 .ready .dress .salee p{
+    position: absolute;
+    font-weight: 600;
+    font-size: 12px;
+    transform: translate(5px, 3px);
+}
+header nav ul li .dropdown-menu3 .ready .dress:hover .salee{
+    transform: translate(-30px);
+}
+header nav ul li .dropdown-menu3 .ready .blo{
+    
+    width: 250px;
+    padding: 8px 10px;
+    transform: translate(0px, 40px);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header nav ul li .dropdown-menu3 .ready .blo:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .ready .blo p{
+    transform: translate(-75px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .ready .blo i{
+    
+    transform: translate(-140px);
+    font-size: 7px;
+    position: absolute;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+header nav ul li .dropdown-menu3 .ready .blo:hover p{
+    transform: translate(-60px);
+}
+header nav ul li .dropdown-menu3 .ready .blo:hover i{
+    transform: translate(-120px);
+}
+/* ________ */
+header nav ul li .dropdown-menu3 .ready .caa{
+    
+    width: 250px;
+    padding: 8px 10px;
+    transform: translate(0px, 40px);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header nav ul li .dropdown-menu3 .ready .caa:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .ready .caa p{
+    transform: translate(-60px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .ready .caa i{
+    
+    transform: translate(-140px);
+    font-size: 7px;
+    position: absolute;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+header nav ul li .dropdown-menu3 .ready .caa:hover p{
+    transform: translate(-35px);
+}
+header nav ul li .dropdown-menu3 .ready .caa:hover i{
+    transform: translate(-120px);
+}
+/* _________2 */
+header nav ul li .dropdown-menu3 .ready .ski{
+
+    width: 250px;
+    padding: 8px 10px;
+    transform: translate(0px, 40px);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header nav ul li .dropdown-menu3 .ready .ski:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .ready .ski p{
+    transform: translate(-105px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .ready .ski i{
+    
+    transform: translate(-140px);
+    font-size: 7px;
+    position: absolute;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+header nav ul li .dropdown-menu3 .ready .ski:hover p{
+    transform: translate(-90px);
+}
+header nav ul li .dropdown-menu3 .ready .ski:hover i{
+    transform: translate(-120px);
+}
+header nav ul li:nth-child(3) .dropdown-menu3 i{
+    /* transform: translate(-240px); */
+    transform: translate(-350px);
+}
+/* ________3 */
+header nav ul li .dropdown-menu3 .ready .pan{
+    
+    width: 250px;
+    padding: 8px 10px;
+    transform: translate(0px, 40px);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header nav ul li .dropdown-menu3 .ready .pan:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .ready .pan p{
+    transform: translate(-75px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .ready .pan i{
+    
+    transform: translate(-140px);
+    font-size: 7px;
+    position: absolute;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+header nav ul li .dropdown-menu3 .ready .pan:hover p{
+    transform: translate(-60px);
+}
+header nav ul li .dropdown-menu3 .ready .pan:hover i{
+    transform: translate(-120px);
+}
+/* ________4 */
+header nav ul li .dropdown-menu3 .ready .outt{
+
+    width: 250px;
+    padding: 8px 10px;
+    transform: translate(0px, 40px);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header nav ul li .dropdown-menu3 .ready .outt:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .ready .outt p{
+    transform: translate(-90px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .ready .outt i{
+    
+    transform: translate(-140px);
+    font-size: 7px;
+    position: absolute;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+header nav ul li .dropdown-menu3 .ready .outt:hover p{
+    transform: translate(-70px);
+}
+header nav ul li .dropdown-menu3 .ready .outt:hover i{
+    transform: translate(-120px);
+}
+/* __________5 */
+header nav ul li .dropdown-menu3 .ready .swi{
+    
+    width: 250px;
+    padding: 8px 10px;
+    transform: translate(0px, 40px);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header nav ul li .dropdown-menu3 .ready .swi:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .ready .swi p{
+    transform: translate(-90px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .ready .swi i{
+    
+    transform: translate(-140px);
+    font-size: 7px;
+    position: absolute;
+    z-index: 100;
+    transition: 0.3s;
+}
+.acc{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transform: translate(930px);
+    padding: 30px 5px;
+}
+.acc .acch{
+    font-size: 20px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 600;
+    gap: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.acc p{
+    font-weight: normal;
+    font-size: 14px;
+}
+.ff{
+    transform: translate(1200px);
+}
+header nav ul li .dropdown-menu3 .acc .acch:hover{
+    cursor: pointer;
+    color: var(--main-color);
+}
+header nav ul li .dropdown-menu3 .acc .jac{
+    
+    width: 250px;
+    padding: 8px 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header nav ul li .dropdown-menu3 .acc .jac:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .acc .jac p{
+    transform: translate(-100px);
+    transition: 0.5s;
+}
+header nav ul li .dropdown-menu3 .acc .jac i{
+    transform: translate(-140px);
+    font-size: 15px;
+    font-size: 7px;
+    position: absolute;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+header nav ul li .dropdown-menu3 .acc .jac:hover p{
+    transform: translate(-80px);
+}
+header nav ul li .dropdown-menu3 .acc .jac:hover i{
+    transform: translate(-120px);
+}
+header nav ul li .dropdown-menu3 .acc .dress{
+    
+    width: 250px;
+    padding: 8px 10px;
+    transform: translate(0px, 40px);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header nav ul li .dropdown-menu3 .acc .dress:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .acc .dress p{
+    transform: translate(-100px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .acc .dress i{
+    
+    transform: translate(-140px);
+    font-size: 7px;
+    position: absolute;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+header nav ul li .dropdown-menu3 .acc .dress:hover p{
+    transform: translate(-80px);
+}
+header nav ul li .dropdown-menu3 .acc .dress:hover i{
+    transform: translate(-120px);
+}
+header nav ul li .dropdown-menu3 .acc .blo{
+    
+    width: 250px;
+    padding: 8px 10px;
+    transform: translate(0px, 40px);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header nav ul li .dropdown-menu3 .acc .blo:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .acc .blo p{
+    transform: translate(-75px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .acc .blo i{
+    
+    transform: translate(-140px);
+    font-size: 7px;
+    position: absolute;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+header nav ul li .dropdown-menu3 .acc .blo:hover p{
+    transform: translate(-60px);
+}
+header nav ul li .dropdown-menu3 .acc .blo:hover i{
+    transform: translate(-120px);
+}
+
+header nav ul li:nth-child(3) .dropdown-menu3 i{
+    /* transform: translate(-240px); */
+    transform: translate(-350px);
+}
+header nav ul li:nth-child(3) .dropdown-menu3 a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .acc .caa{
+    
+    width: 250px;
+    padding: 8px 10px;
+    transform: translate(0px, 40px);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header nav ul li .dropdown-menu3 .acc .caa:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .acc .caa p{
+    transform: translate(-60px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .acc .caa i{
+    
+    transform: translate(-140px);
+    font-size: 7px;
+    position: absolute;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+header nav ul li .dropdown-menu3 .acc .caa:hover p{
+    transform: translate(-35px);
+}
+header nav ul li .dropdown-menu3 .acc .caa:hover i{
+    transform: translate(-120px);
+}
+/* _________2 */
+header nav ul li .dropdown-menu3 .acc .ski{
+    
+    width: 250px;
+    padding: 8px 10px;
+    transform: translate(0px, 40px);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header nav ul li .dropdown-menu3 .acc .ski:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .acc .ski p{
+    transform: translate(-85px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .acc .ski i{
+    
+    transform: translate(-140px);
+    font-size: 7px;
+    position: absolute;
+    z-index: 100;
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .acc .ski .salee{
+    background-color: var(--main-color);
+    transition: 0.3s;
+    color: #000000;
+    width: 45px;
+    height: 20px;
+    border-radius: 5px;
+    transform: translate(-75px);
+    position: relative;
+}
+header nav ul li .dropdown-menu3 .acc .ski .salee span{
+    position: absolute;
+    font-weight: 600;
+    font-size: 12px;
+    transform: translate(6px, 3px);
+}
+header nav ul li .dropdown-menu3 .acc .ski:hover .salee{
+    transform: translate(-30px);
+}
+header nav ul li .dropdown-menu3 .ff .ski .salee{
+    background-color: #fdfdfd;
+}
+header nav ul li .dropdown-menu3 .ff .ski:hover .salee{
+    transform: translate(-30px);
+}
+
+header nav ul li .dropdown-menu3 .acc .ski:hover p{
+    transform: translate(-70px);
+}
+header nav ul li .dropdown-menu3 .acc .ski:hover i{
+    transform: translate(-120px);
+}
+header nav ul li:nth-child(3) .dropdown-menu3 i{
+    /* transform: translate(-240px); */
+    transform: translate(-350px);
+}
+/* ________3 */
+header nav ul li .dropdown-menu3 .acc .pan{
+
+    width: 250px;
+    padding: 8px 10px;
+    transform: translate(0px, 40px);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header nav ul li .dropdown-menu3 .acc .pan:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .acc .pan p{
+    transform: translate(-75px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .acc .pan i{
+    
+    transform: translate(-140px);
+    font-size: 7px;
+    position: absolute;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+header nav ul li .dropdown-menu3 .acc .pan:hover p{
+    transform: translate(-60px);
+}
+header nav ul li .dropdown-menu3 .acc .pan:hover i{
+    transform: translate(-120px);
+}
+/* ________4 */
+header nav ul li .dropdown-menu3 .acc .outt{
+
+    width: 250px;
+    padding: 8px 10px;
+    transform: translate(0px, 40px);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header nav ul li .dropdown-menu3 .acc .outt:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+header nav ul li .dropdown-menu3 .acc .outt p{
+    transform: translate(-90px);
+    transition: 0.3s;
+}
+header nav ul li .dropdown-menu3 .acc .outt i{
+    
+    transform: translate(-140px);
+    font-size: 7px;
+    position: absolute;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+header nav ul li .dropdown-menu3 .acc .outt:hover p{
+    transform: translate(-70px);
+}
+header nav ul li .dropdown-menu3 .acc .outt:hover i{
+    transform: translate(-120px);
+}
+header nav ul li:nth-child(3) .dropdown-menu3 a:hover{
+    transform: translate(10px);
+    color: #fdfdfd;
+    cursor: pointer;
+}
+header ul li .dropdown-menu3 .hdro{
+    width: 70%;
+    transform: translate(400px, 50px);
+    border-radius: 20px;
+    opacity: 0.25;
+}
+header ul li .dropdown-menu3 .dropfo{
+    display: flex;
+    transform: translate(800px, 80px);
+}
+header ul li .dropdown-menu3 .dropfo p{
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+header ul li .dropdown-menu3 .dropfo p:hover{
+    color: var(--main-color);
+}
+header ul li .dropdown-menu3 .dropfo p:hover .fa-solid{
+    transform: translate(30px, 2px);
+}
+header ul li .dropdown-menu3 .dropfo  .fa-brands {
+transform: translate(-10px, 2px);
+cursor: pointer;
+color: var(--main-color);
+font-size: 20px;
+}
+header ul li .dropdown-menu3 .dropfo  .fa-brands:hover p{
+    color: var(--main-color);
+}
+header ul li .dropdown-menu3 .dropfo .fa-solid{
+    transition: 0.1s;
+    cursor: pointer;
+font-size: 17px;
+transform: translate(8px, 2px);
+}
+.upword{
+    background-color: var(--main-color);
+    padding: 29px 30px;
+    border-radius: 50%;
+    transition: 0.3s;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(1330px, 650px);
+    z-index: 10;
+}
+.upword .fa-arrow-up{
+    display: none;
+}
+.upword:hover{
+    cursor: pointer;
+    background-color: #141215;
+    border: 2px solid var(--main-color);
+    padding: 35px  35px;
+}
+.upword:hover .fa-arrow-up{
+    display: block;
+    transition: 0.7s;
+    color: white;
+    font-size: 20px;
+}
+.upword:hover .fa-chevron-up{
+    display: none; 
+}
+.upword:hover a{
+    text-decoration: none;
+}
+.upworda{
+    text-decoration: none;
+    color: #fdfdfd;
+}
+header nav .fa-bars{
+    position: absolute;
+    left: 100px;
+    font-size: 20px;
+    color: var(--main-color);
+    cursor: pointer;
+    display: none
+}
+
+/* end of header */
+
+/* start services */
+.services{
+    margin: 35px 0;
+    height: 200px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services div{
+    width: calc((100% - 60px)/4);
+    background-color: var(--main-color);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services div b {
+    font-weight: 900;
+    font-size: 25px;
+}
+/* end services */
+
+
+/* start catigorie */
+.catigo{
+    height: 60vh;
+    margin: 32px, 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.catigo .card-1,
+.catigo .card-2{
+    background-image: url(images/banner-helloween-01.webp);
+    height: 50vh;
+    width: calc((100% - 60px)/4);
+    background-size: cover;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.catigo .card-2{
+    background-image: url(images/banner-helloween-02.webp);
+}
+.catigo .card-1 b,
+.catigo .card-2 b{
+    font-size: 45px;
+    text-align: center;
+    font-weight: 900;
+}
+.catigo .card-1 p,
+.catigo .card-2 p{
+    font-weight: 400;
+}
+.catigo .card-3{
+    height: 50vh;
+    width: calc((100% - 20px)/2);
+    background-image: url(images/banner-helloween-05.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 0px, 30px;
+    box-sizing: border-box;
+}
+.catigo .card-3 b{
+    transform: translate(60px, -40px);
+    font-size: 30px;
+    font-weight: 900;
+}
+.catigo .card-3 .acat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.catigo .card-3 .acat div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.catigo .card-3 .acat div a{
+    color: #fdfdfd;
+    text-decoration: none;
+    font-size: 17px;
+    transform: translate(-110px);
+    transition: 0.5s;
+}
+.catigo .card-3 .acat div a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+.catigo .card-3 .acat div a .bxs-circle{
+    font-size: 8px;
+    transform: translate(-5px, -2px);
+}
+
+
+/* end catigorie */
+
+/* start products */
+.products{
+    margin: 80px 0;
+}
+.titlepro{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+.products .allcards{
+    margin: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.products .allcards .card{
+    width: calc((100% - 60px)/4);
+    text-align: center;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+}
+.products .allcards .card div{
+    width: 100%;
+    overflow: hidden;
+}
+.products .allcards .card div img{
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.products .allcards .card div img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.products .allcards .card b{
+    margin: 15px 0;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.products .allcards .card b:hover{
+    color: var(--main-color);
+}
+.products .allcards .card p{
+    font-weight: 600;
+}
+.products .allcards .card button{
+    margin-top: 13px;
+    padding: 15px 20px;
+    color: #fdfdfd;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 18px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+.products .allcards .card button{
+    display: none;
+    transition: 0.5s;
+}
+.products .allcards .card:hover button{
+    display: block;
+    transition: 0.5s;
+    transform: translate(-50%, -38px );
+}
+.products .allcards .card button:hover{
+    
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+}
+.products .allcards .card article{
+    transform: translate(370px, -430px);
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    transition: 0.5s;
+
+}
+.products .allcards .card article i{
+    width: 30px;
+    color: #141215;
+    background-color: #fdfdfd;
+    padding: 5px 0px;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+.products .allcards .card:hover article{
+    transform: translate(269px, -430px);
+}
+.products .allcards .card article .bx-heart:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+
+}
+.products .allcards .card article .fa-eye:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: blue;
+}
+.products .allcards .card2{
+    width: calc((100% - 60px)/4);
+    text-align: center;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+}
+.products .allcards .card2 div{
+    width: 100%;
+    overflow: hidden;
+}
+.products .allcards .card2 div img{
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.products .allcards .card2 div img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.products .allcards .card2 b{
+    margin: 15px 0;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.products .allcards .card2 span{
+    display: inline-block;
+    font-weight: normal;
+    font-size: 15px;
+    font-style: italic;
+    transform: translate(-10px);
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+.products .allcards .card2 b:hover{
+    color: var(--main-color);
+}
+.products .allcards .card2 p{
+    font-weight: 600;
+}
+.products .allcards .card2 button{
+    margin-top: 13px;
+    padding: 15px 20px;
+    color: #fdfdfd;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 18px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+.products .allcards .card2 button{
+    display: none;
+    transition: 0.5s;
+}
+.products .allcards .card2:hover .but2{
+    display: inline-block;
+    transform: translate(-70px,-30px);
+}
+.products .allcards .card2 button:hover{
+    
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+}
+.products .allcards .card2 article{
+    transform: translate(370px, -430px);
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    transition: 0.5s;
+
+}
+.products .allcards .card2 article i{
+    width: 30px;
+    color: #141215;
+    background-color: #fdfdfd;
+    padding: 5px 0px;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+.products .allcards .card2:hover article{
+    transform: translate(269px, -430px);
+}
+.products .allcards .card2 article .bx-heart:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+
+}
+.products .allcards .card2 article .fa-eye:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: blue;
+}
+.products .allcards .card3{
+    width: calc((100% - 60px)/4);
+    text-align: center;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+}
+.products .allcards .card3 div{
+    width: 100%;
+    overflow: hidden;
+}
+.products .allcards .card3 div img{
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.products .allcards .card3 div img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.products .allcards .card3 b{
+    margin: 15px 0;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.products .allcards .card3 b:hover{
+    color: var(--main-color);
+}
+.products .allcards .card3 p{
+    font-weight: 600;
+}
+.products .allcards .card3 button{
+    margin-top: 13px;
+    padding: 15px 20px;
+    color: #fdfdfd;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 18px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+.products .allcards .card2 .sale{
+    background-color: var(--main-color);
+    width: 30px;
+    height: 30px;
+    padding: 5px 7px;
+    z-index: 30;
+    transform: translate(10px,-390px);
+}
+
+.products .allcards  .sale .salep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+.products .allcards .sale .salep2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+.products .allcards .card2:hover  .sale{
+    display: none;
+}
+.products .allcards .card3 button{
+    transition: 0.5s;
+    display: none;
+}
+.products .allcards .card3:hover button{
+    display: inline-block;
+    transform: translate(-70px,-40px);
+}
+.products .allcards .card3 button:hover{
+    
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+}
+.products .allcards .card3 article{
+    transform: translate(370px, -430px);
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    transition: 0.5s;
+
+}
+.products .allcards .card3 article i{
+    width: 30px;
+    color: #141215;
+    background-color: #fdfdfd;
+    padding: 5px 0px;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+.products .allcards .card3:hover article{
+    transform: translate(269px, -430px);
+}
+.products .allcards .card3 article .bx-heart:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+
+}
+.products .allcards .card3 article .fa-eye:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: blue;
+}
+/* end products */
+
+
+/* start hallowen night */
+.night{
+    width: 100%;
+    overflow: hidden;
+}
+.night div{
+    width: 100%;
+    overflow: hidden;
+}
+.night div img{
+  
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.night div img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.night .titleni{
+    display: flex;
+    flex-direction: column;
+    width: 105%;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 20px 0;
+    transform: translate(230PX, -400px);
+}
+.night .titleni2{
+    transform: translate(280px, -415px);
+    font-size: 25px;
+    font-weight: 800;
+}
+.night .titleni4{
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 14px;   
+    transform: translate(140px,-380px);
+}
+.night .titleni3{
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 14px;   
+    transform: translate(230px,-370px);
+}
+.night button{
+    padding: 25px 50px;
+    background-color: #141215;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    transition:0.5s;
+    transform: translate(320px,-330px);
+}
+
+.night button:hover{
+    background-color: #fff;
+    color: #141215;
+}
+.night a{
+    text-decoration: none;
+    color: #fdfdfd;
+}
+/*  end hallowen night */
+
+
+
+
+/* start New arrival */
+
+.arrival{
+    transform: translate(0 ,-80px);
+    
+    
+}
+.arrival .allcards-2{
+   
+   justify-content: center;
+    gap: 20px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.arrival .allcards-2 .left-side {
+    width: calc((100% - 20px ) / 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px
+}
+.arrival .allcards-2 .right_side{
+    width: calc((100% - 20px ) / 2);
+}
+.arrival .titlear{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: none;
+}
+.arrival .allcards-2 .chris{
+    width: calc((100% - 20px)/2);
+    height: 460px;
+    transform: translate(70px, 60px);
+    position: relative;
+    overflow: hidden;
+}
+.arrival .allcards-2 .chris div{
+    width: 300px;
+    overflow: hidden;
+}
+.arrival .allcards-2 .chris div img{
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.arrival .allcards-2 .chris div img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.arrival .allcards-2 .chris b{
+    margin: 17px 0;
+    transform: translate(0,-5px);
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.arrival .allcards-2 .chris b:hover{
+    color: var(--main-color);
+}
+.arrival .allcards-2 .chris p{
+    font-weight: 600;
+    transform: translate(0, -4px);
+}
+.arrival .allcards-2 .chris .new{
+    position: absolute;
+    background-color: #0068ff;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    color: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(10px, -100px);
+    transition: 0.1s;
+    opacity: 1;
+}
+
+.arrival .allcards-2 .chris .new p{
+    transform: translateY(2px);
+    font-size: 15px;
+}
+.arrival .allcards-2 .chris:hover .new{
+    opacity: 0;
+}
+
+.arrival .allcards-2 .chris .chrisb{
+    margin-top: 13px;
+    padding: 8px 12px;
+    color: #fdfdfd;
+    background-color: var(--main-color);
+    position: absolute;
+   
+    font-size: 18px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+.arrival .allcards-2 .chris button{
+    transition: 0.5s;
+    transform: translate(0, 50px);
+}
+.arrival .allcards-2 .chris:hover button{
+    display: inline-block;
+    transform: translate(0,-50px);
+}
+.arrival .allcards-2 .chris button:hover{
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+}
+.arrival .allcards-2 .chris .stars{
+    transform: translate(200px, 150px);
+    transition: 0.5s;
+}
+.arrival .allcards-2 .chris .stars:hover{
+    cursor: pointer;
+}
+.arrival .allcards-2 .chris:hover .stars{
+    transform: translate(200px, -30px);
+}
+.arrival .allcards-2 .chris .fa-star{
+    transition: 0.3s;
+}
+.arrival .allcards-2 .chris .fa-star:hover{
+    font-size: 20px;
+}
+.arrival .allcards-2 .chris article{
+    transform: translate(370px, -430px);
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    transition: 0.5s;
+
+}
+
+.arrival .allcards-2 .chris article i{
+    width: 30px;
+    font-size: 15px;
+    color: #141215;
+    text-align: center;
+    background-color: #fdfdfd;
+    padding: 6px 0px;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+.arrival .allcards-2 .chris:hover article{
+    transform: translate(269px, -430px);
+}
+.arrival .allcards-2 .chris article .bx-heart{
+    font-size: 16px;
+}
+.arrival .allcards-2 .chris article .bx-heart:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+    
+}
+.arrival .allcards-2 .chris article .fa-eye:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: blue;
+}
+.arrival .allcards-2 .chris a{
+    text-decoration: none;
+    color: #fdfdfd;
+}
+.arrival .allcards-2 .chris .fo{
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0.75;
+    transform: translate(230px, 150px);
+    transition: 0.5s;
+}
+.arrival .allcards-2 .chris:hover .fo{
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0.75;
+    transform: translate(230px, -50px);
+}
+.arrival .allcards-2 .candle{
+    width: calc((100% - 20px ) / 2);
+    height: 460px;
+    transform: translate(40px, 60px);
+    position: relative;
+    overflow: hidden;
+}
+.arrival .allcards-2 .candle div{
+    width: 300px;
+    overflow: hidden;
+}
+.arrival .allcards-2 .candle div img{
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.arrival .allcards-2 .candle div img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.arrival .allcards-2 .candle b{
+    margin: 17px 0;
+    transform: translate(0,-5px);
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.arrival .allcards-2 .candle b:hover{
+    color: var(--main-color);
+}
+.arrival .allcards-2 .candle p{
+   
+    font-weight: 600;
+    transform: translate(5px, -4px);
+}
+.arrival .allcards-2 .candle span{
+    text-decoration: line-through;
+    opacity: 0.7;
+    display: inline-block;
+    transform: translate(-5px);
+    text-decoration: line-through;
+    opacity: 0.7;
+    font-weight: normal;
+    font-size: 15px;
+    font-style: italic;
+}
+.arrival .allcards-2 .candle a{
+    text-decoration: none;
+    color: #fdfdfd;
+}
+.arrival .allcards-2 .candle .fo{
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0.75;
+    transform: translate(230px, 30px);
+    transition: 0.5s;
+}
+.arrival .allcards-2 .candle:hover .fo{
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0.75;
+    transform: translate(230px, -50px);
+}
+.arrival .allcards-2 .candle button{
+    margin-top: 13px;
+    padding: 8px 12px;
+    color: #fdfdfd;
+    background-color: var(--main-color);
+    position: absolute;
+   
+    font-size: 18px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+.arrival .allcards-2 .candle button{
+    transition: 0.5s;
+    position: absolute;
+    transform: translate(0px);
+}
+.arrival .allcards-2 .candle:hover button{
+    display: inline-block;
+    transform: translate(0,-50px);
+}
+.arrival .allcards-2 .candle button:hover{
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+}
+.arrival .allcards-2 .candle .stars-2{
+    transform: translate(200px, 30px);
+    transition: 0.5s;
+}
+.arrival .allcards-2 .candle .stars-2:hover{
+    cursor: pointer;
+}
+.arrival .allcards-2 .candle:hover .stars-2{
+    transform: translate(200px , -30px);
+}
+.arrival .allcards-2 .candle .fa-star{
+    transition: 0.5s;
+}
+.arrival .allcards-2 .candle .fa-star:hover{
+    font-size: 20px;
+}
+
+.arrival .allcards-2 .candle .sale2{
+    position: absolute;
+    background-color: var(--main-color);
+    width: 65px;
+    height: 65px;
+    flex-direction: column;
+    border-radius: 50%;
+    color: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(10px, -100px);
+    transition: 0.1s;
+    opacity: 1;
+}
+.arrival .allcards-2 .candle .sale2 p{
+    transform: translate(-1px);
+    font-weight: 600;
+    font-size: 15px;
+}
+.arrival .allcards-2 .candle:hover .sale2{
+    opacity: 0;
+}
+.arrival .allcards-2 .candle article{
+    transform: translate(370px, -430px);
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    transition: 0.5s;
+
+}
+
+.arrival .allcards-2 .candle article i{
+    width: 30px;
+    font-size: 15px;
+    color: #141215;
+    text-align: center;
+    background-color: #fdfdfd;
+    padding: 6px 0px;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+.arrival .allcards-2 .candle:hover article{
+    transform: translate(269px, -430px);
+}
+.arrival .allcards-2 .candle article .bx-heart{
+    font-size: 16px;
+}
+.arrival .allcards-2 .candle article .bx-heart:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+    
+}
+.arrival .allcards-2 .candle article .fa-eye:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: blue;
+}
+
+.arrival .allcards-2 .ghost{
+    width: calc((100% - 20px ) / 2);
+    height: 460px;
+    transform: translate(70px, 100px);
+    position: relative;
+    overflow: hidden;
+}
+.arrival .allcards-2 .ghost div{
+    width: 300px;
+    overflow: hidden;
+}
+.arrival .allcards-2 .ghost div img{
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.arrival .allcards-2 .ghost div img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.arrival .allcards-2 .ghost b{
+    margin: 17px 0;
+    transform: translate(0,-5px);
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.arrival .allcards-2 .ghost b:hover{
+    color: var(--main-color);
+}
+.arrival .allcards-2 .ghost p{
+   
+    font-weight: 600;
+    transform: translate(5px, -4px);
+}
+.arrival .allcards-2 .ghost span{
+    text-decoration: line-through;
+    opacity: 0.7;
+    display: inline-block;
+    transform: translate(-5px);
+    text-decoration: line-through;
+    opacity: 0.7;
+    font-weight: normal;
+    font-size: 15px;
+    font-style: italic;
+}
+.arrival .allcards-2 .ghost button{
+    margin-top: 13px;
+    padding: 8px 12px;
+    color: #fdfdfd;
+    background-color: var(--main-color);
+    position: absolute;
+   
+    font-size: 18px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+.arrival .allcards-2 .ghost button{
+    transition: 0.5s;
+    position: absolute;
+    transform: translate(0px);
+}
+.arrival .allcards-2 .ghost:hover button{
+    display: inline-block;
+    transform: translate(0,-50px);
+}
+.arrival .allcards-2 .ghost button:hover{
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+}
+.arrival .allcards-2 .ghost a{
+    text-decoration: none;
+    color: #fdfdfd;
+}
+.arrival .allcards-2 .ghost .fo{
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0.75;
+    transform: translate(230px, 30px);
+    transition: 0.5s;
+}
+.arrival .allcards-2 .ghost:hover .fo{
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0.75;
+    transform: translate(230px, -50px);
+}
+.arrival .allcards-2 .ghost .stars-2{
+    transform: translate(200px, 30px);
+    transition: 0.5s;
+}
+.arrival .allcards-2 .ghost .stars-2:hover{
+    cursor: pointer;
+}
+.arrival .allcards-2 .ghost:hover .stars-2{
+    transform: translate(200px , -30px);
+}
+.arrival .allcards-2 .ghost .fa-star{
+    transition: 0.5s;
+}
+.arrival .allcards-2 .ghost .fa-star:hover{
+    font-size: 20px;
+}
+
+.arrival .allcards-2 .ghost article{
+    transform: translate(370px, -430px);
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    transition: 0.5s;
+
+}
+
+.arrival .allcards-2 .ghost article i{
+    width: 30px;
+    font-size: 15px;
+    color: #141215;
+    text-align: center;
+    background-color: #fdfdfd;
+    padding: 6px 0px;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+.arrival .allcards-2 .ghost:hover article{
+    transform: translate(269px, -430px);
+}
+.arrival .allcards-2 .ghost article .bx-heart{
+    font-size: 16px;
+}
+.arrival .allcards-2 .ghost article .bx-heart:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+    
+}
+.arrival .allcards-2 .ghost article .fa-eye:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: blue;
+}
+.arrival .allcards-2 .sets{
+    width: calc((100% - 20px ) / 2);
+    height: 460px;
+    transform: translate(40px, 100px);
+    position: relative;
+    overflow: hidden;
+}
+.arrival .allcards-2 .sets div{
+    width: 300px;
+    overflow: hidden;
+}
+.arrival .allcards-2 .sets div img{
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.arrival .allcards-2 .sets div img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.arrival .allcards-2 .sets b{
+    margin: 17px 0;
+    transform: translate(0,-5px);
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.arrival .allcards-2 .sets b:hover{
+    color: var(--main-color);
+}
+.arrival .allcards-2 .sets p{
+   
+    font-weight: 600;
+    transform: translate(5px, -4px);
+}
+.arrival .allcards-2 .sets span{
+    text-decoration: line-through;
+    opacity: 0.7;
+    display: inline-block;
+    transform: translate(-5px);
+    text-decoration: line-through;
+    opacity: 0.7;
+    font-weight: normal;
+    font-size: 15px;
+    font-style: italic;
+}
+.arrival .allcards-2 .sets a{
+    text-decoration: none;
+    color: #fdfdfd;
+}
+.arrival .allcards-2 .sets .fo{
+    position: absolute;
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0.75;
+    transform: translate(230px, 30px);
+    transition: 0.5s;
+}
+.arrival .allcards-2 .sets:hover .fo{
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0.75;
+    transform: translate(230px, -50px);
+}
+.arrival .allcards-2 .sets button{
+    margin-top: 13px;
+    padding: 8px 12px;
+    color: #fdfdfd;
+    background-color: var(--main-color);
+    position: absolute;
+   
+    font-size: 18px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+.arrival .allcards-2 .sets button{
+    transition: 0.5s;
+    position: absolute;
+    transform: translate(0);
+}
+.arrival .allcards-2 .sets:hover button{
+    display: inline-block;
+    transform: translate(0,-50px);
+}
+.arrival .allcards-2 .sets button:hover{
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+}
+.arrival .allcards-2 .sets .stars-2{
+    transform: translate(200px, 30px);
+    transition: 0.5s;
+}
+.arrival .allcards-2 .sets .stars-2:hover{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.arrival .allcards-2 .sets:hover .stars-2{
+    transform: translate(200px , -30px);
+}
+.arrival .allcards-2 .sets .fa-star{
+    transition: 0.5s;
+}
+.arrival .allcards-2 .sets .fa-star:hover{
+    font-size: 20px;
+}
+.arrival .allcards-2 .sets article{
+    transform: translate(370px, -430px);
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    transition: 0.5s;
+
+}
+
+.arrival .allcards-2 .sets article i{
+    width: 30px;
+    font-size: 15px;
+    color: #141215;
+    text-align: center;
+    background-color: #fdfdfd;
+    padding: 6px 0px;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+.arrival .allcards-2 .sets:hover article{
+    transform: translate(269px, -430px);
+}
+.arrival .allcards-2 .sets article .bx-heart{
+    font-size: 16px;
+}
+.arrival .allcards-2 .sets article .bx-heart:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+    
+}
+.arrival .allcards-2 .sets article .fa-eye:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: blue;
+}
+
+
+.arrival .allcards-2 .right_side {
+    transform: translate(0, 90px);
+    width: 500px;
+    height: 790px;
+    position: relative;
+    overflow: hidden;
+}
+.arrival .allcards-2 .right_side div{
+    width: 500px;
+    overflow: hidden;
+}
+.arrival .allcards-2 .right_side div img{
+    width: 500px;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+.arrival .allcards-2 .right_side div img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.arrival .allcards-2 .right_side b{
+    margin: 17px 0;
+    transform: translate(0,-5px);
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: translate(180px);
+}
+.arrival .allcards-2 .right_side b:hover{
+    cursor: pointer;
+    color: var(--main-color);
+}
+.arrival .allcards-2 .right_side p{
+    transform: translate(250px);
+    font-weight: 600;
+
+}
+.arrival .allcards-2 .right_side button{
+    margin-top: 13px;
+    padding: 8px 12px;
+    color: #fdfdfd;
+    background-color: var(--main-color);
+    position: absolute;
+   
+    font-size: 18px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+    transform: translate(220px, 0px);
+}
+.arrival .allcards-2 .right_side:hover button{
+    display: inline-block;
+    transform: translate(220px,-45px);
+}
+.arrival .allcards-2 .right_side button:hover{
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+}
+
+.arrival .allcards-2 .right_side article{
+    position: absolute;
+    transform: translate(500px, -770px);
+    display: flex;
+    
+    flex-direction: column;
+    gap: 13px;
+    transition: 0.5s;
+
+}
+
+.arrival .allcards-2 .right_side article i{
+    width: 30px;
+    font-size: 15px;
+    color: #141215;
+    text-align: center;
+    background-color: #fdfdfd;
+    padding: 6px 0px;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+.arrival .allcards-2 .right_side:hover article{
+    display:flex;
+    transition: 0.5s;
+    transform: translate(460px, -770px);
+}
+.arrival .allcards-2 .right_side article .bx-heart{
+    font-size: 16px;
+}
+.arrival .allcards-2 .right_side article .bx-heart:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+    
+}
+.arrival .allcards-2 .right_side article .fa-eye:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: blue;
+}
+
+/* end New arrival */
+
+
+
+
+/* start about */
+.about{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.about img{
+    width: 100%;
+    height:100%;
+    transition: 0.5s;
+    left: 0;
+    bottom: -50px;
+    overflow: hidden;
+    
+}
+.about div{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 53%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 20px;
+    text-align: center;
+    
+}
+.about div img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.about .titleab{
+    transform: translate(340px, 180px);
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+.about .titleab2{
+    z-index: auto;
+    transform: translate(100px, 240px);
+    line-height: 2;
+    font-size: 15px;
+    font-weight: normal ;
+    text-transform: lowercase;
+}
+
+.about .titleab3{
+    z-index: auto;
+    transform: translate(180px, 230px);
+    line-height: 2;
+    font-size: 15px;
+    font-weight: normal ;
+    text-transform: lowercase;
+}
+.about .titleab4{
+    z-index: auto;
+    transform: translate(160px, 160px);
+    line-height: 2;
+    font-size: 15px;
+    font-weight: normal ;
+    text-transform: lowercase;
+}
+.about button{
+    padding: 25px 50px;
+    background-color:var(--main-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    transition:0.5s;
+    transform: translate(320px,225px);
+}
+.about button:hover{
+    background-color: #fdfdfd;
+    color: #141215;
+}
+.about a{
+    text-decoration: none;
+    color: #fdfdfd;
+}
+
+.ab2{
+    text-decoration: none;
+    color: #fdfdfd;
+}
+/* end start */
+
+
+
+
+/* start plus */
+.plus{
+    margin:  100px 0;
+    height: 90vh;
+    position: relative;
+}
+.plus img{
+    width: 100%;
+    height: 100%;
+}
+.plus i{
+    color: white;
+    background-color: #f0771a;
+    border-radius: 50%;
+    padding: 9px;
+    transition: 0.3s;
+    font-size: 20px;
+    
+}
+.plus .pl1{
+    transform: translate(90px, -340px);
+    position: absolute;
+    background-color: #ffffff66;
+    border-radius: 50px;
+    width: 49px;
+    height: 49px;
+}
+.plus .pl1 i{
+    transform: translate(7px, 6px);
+}
+.plus i:hover{
+    color:var(--main-color);
+    background-color: #fdfdfd;
+    cursor: pointer;
+}
+.plus .pl2{
+    transform: translate(410px, -150px);
+    position: absolute;
+    background-color: #ffffff66;
+    border-radius: 50px;
+    width: 49px;
+    height: 49px;
+}
+.plus .pl2 i{
+    transform: translate(7px,6px);
+}
+.plus .pl3{
+    transform: translate(350px,-490px);
+    position: absolute;
+    background-color: #ffffff66;
+    border-radius: 50px;
+    width: 49px;
+    height: 49px;
+}
+.plus .pl3 i{
+    transform: translate(7px, 6px);
+}
+.plus .pl4{
+    transform: translate(1000px, -205px);
+    position: absolute;
+    background-color: #ffffff66;
+    border-radius: 50px;
+    width: 49px;
+    height: 49px;
+}
+.plus .pl4 i{
+    transform: translate(7px, 6px);
+}
+
+.plus .pl5 {
+    transform: translate(910px,-500px);
+    position: absolute;
+    background-color: #ffffff66;
+    border-radius: 50px;
+    width: 49px;
+    height: 49px;
+}
+.plus .pl5 i{
+    transform: translate(7px, 6px);
+}
+
+.plus .pl6{
+    transform: translate(1243px, -440px);
+    position: absolute;
+    background-color: #ffffff66;
+    border-radius: 50px;
+    width: 49px;
+    height: 49px;
+}
+.plus .pl6 i{
+   transform: translate(7px, 6px);
+}
+/* end plus */
+
+
+
+
+.hrr1{
+    transform: translate(0, 50px);
+    opacity: 0.25;
+}
+
+
+/* start testimonials */
+.testimonials{
+    height: 550px;
+    transform: translate(0. 240px);
+    padding: 100px 200px;
+    background-image: url(images/helloween-bg2.webp);
+    background-position: center;
+    position: center;
+    background-size: cover;
+
+}
+.testimonials b{
+    text-align: center;
+    display: block;
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-weight: 900;
+}
+.testimonials .testim{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px ;
+}
+.testimonials .testim .cardset{
+    width: calc((100% - 20px) / 2) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding:  60px 50px ;
+    border: 1px  #252225;
+    border-style:dashed;
+    box-sizing: border-box;
+}
+.testimonials .testim .cardset h4{
+    font-size: 25px;
+    color: var(--main-color);
+}
+.testimonials .testim .cardset p{
+    line-height: 1.5;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+.testimonials .testim .left_right{
+    background-color: #141215;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    transition: 0.5s;
+}
+.testimonials .testim .left_right i{
+    position: absolute;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--main-color);
+    transform: translate(12px, 11px);
+    transition: 0.5s;
+}
+.testimonials .testim .lle{
+    opacity: 0.35;
+    transform: translate(10px);
+}
+/* end testimonials */
+
+
+/* start footer */
+
+footer{
+    position: relative;
+    background-color: #000000;
+    color: #fdfdfd;
+    height: 70vh;
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+footer .foot1 img{
+    padding:18px 120px;
+    width: 170px;
+    transform: translate(50px);
+}
+footer .foot1 .foot1p{
+   padding: 18px 120px;
+   font-size: 13px;
+   opacity: 0.3;
+   font-weight: 100;
+}
+footer .foot1 .foot1p2{
+    padding: 18px 120px;
+   font-size: 13px;
+   opacity: 0.3;
+   font-weight: 100;
+   transform: translateY(-22px);
+}
+footer .foot1 .foot1p3{
+    padding: 18px 120px;
+   font-size: 13px;
+   opacity: 0.3;
+   font-weight: 100;
+   transform: translateY(-44px);
+}
+footer .foot1 .foot1p4{
+    padding: 18px 120px;
+   font-size: 13px;
+   opacity: 0.3;
+    font-weight: 100;
+   transform: translateY(-65px);
+}
+footer .foot2{
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+top: 50%;
+left: 50%;
+transform: translate(-100px, -220px);
+gap: 30px;
+}
+footer .foot2 .foot2h{
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-family: 600;
+    letter-spacing: 0px;
+    transform: translate(-50px, -10px);
+}
+footer .foot2 .foot2p{
+    font-size: 15px;
+    font-weight: 400;
+    transform: translate(-70px);
+    cursor: pointer;
+    opacity: 0.3;
+    transition: 0.2s;
+}
+footer .foot2 .foot2p:hover{
+    opacity: 1;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+footer .foot2 .foot2p2{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.3;
+    transform: translate(-65px);
+    transition: 0.2s;
+}
+footer .foot2 .foot2p2:hover{
+    opacity: 1;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--main-color);
+}
+footer .foot2 .foot2p3{
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 0.3;
+    font-weight: 400;
+    transform: translate(-37px);
+    transition: 0.2s;
+}
+footer .foot2 .foot2p3:hover{
+    opacity: 1;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--main-color);
+}
+footer .foot2 .foot2p4{
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    opacity: 0.3;
+    transform: translate(-28px);
+    transition: 0.2s;
+}
+footer .foot2 .foot2p4:hover{
+    opacity: 1;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--main-color);
+}
+footer .foot2 .foot2p5{
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    opacity: 0.3;
+    transform: translate(-35px);
+    transition: 0.2s;
+}
+footer .foot2 .foot2p5:hover{
+    opacity: 1;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--main-color);
+}
+footer .foot2 .foot2p6{
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    opacity: 0.3;
+    transform: translate(-90px, -14px);
+    transition: 0.2s;
+}
+footer .foot2 .foot2p6:hover{
+    opacity: 1;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--main-color);
+}
+footer .contact{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(200px, -230px);
+    gap: 30px;
+    }
+    footer .contact .contacth{
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-family: 600;
+        letter-spacing: 0px;
+        transform: translate(-50px, 0px);
+    }
+    footer .contact .contactp{
+        opacity: 0.3;
+        transform: translate(15px, -47px);
+    }
+    footer .contact .contactb{
+        font-weight: normal;
+        transform: translate(-75px);
+    }
+    footer .contact .contactp2{
+        opacity: 0.3;
+        transform: translate(35px, -102px);
+        transition: 0.2s;
+    }
+    footer .contact .contactp2:hover{
+        opacity: 1;
+        cursor: pointer;
+        color: var(--main-color);
+    }
+    footer .contact .contactb2{
+        font-weight: normal;
+        transform: translate(-77px, -55px);
+    }
+    footer .contact .contactp3{
+        opacity: 0.3;
+        transform: translate(40px, -157px);
+        transition: 0.2s;
+    }
+    footer .contact .contactb3{
+        font-weight: normal;
+        transform: translate(-77px, -110px);
+    }
+    footer .contact .contactp4{
+        opacity: 0.3;
+        transform: translate(83px, -212px);
+        transition: 0.2s;
+    }
+    footer .contact .contactb4{
+        font-weight: normal;
+        transform: translate(-70px, -165px);
+    }
+/* end footer */
